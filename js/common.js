@@ -4162,7 +4162,7 @@ Function Core
         //detect which page has been selected
         var newPage = $(this).attr("href");
         //convert relative path to absolute
-        newPage = window.location.origin + "/pax/" + newPage;
+        newPage = window.location.origin + "/" + newPage;
         //if the page is not already being animated - trigger animation
         if (!isAnimating) changePage(newPage, true);
         firstLoad = true;
